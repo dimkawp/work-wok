@@ -1,0 +1,27 @@
+//Header
+.Header {
+  #head {
+    background-color: sandybrown;
+  }
+ nav {
+   width: 100vw;
+   .items {
+     height: 100px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     .item {
+       cursor: pointer;
+       margin: 5px;
+     }
+   }
+ }
+  .content {
+    text-align: center;
+    height: 1000px;
+    background-color: seagreen;
+    div {
+
+    }
+  }
+}
