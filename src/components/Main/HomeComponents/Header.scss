@@ -1,27 +1,59 @@
 //Header
 .Header {
+  background-color: rebeccapurple;
+  #info {
+    z-index: 11;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+  }
   #head {
-    background-color: sandybrown;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #navigation {
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+    }
+    button {
+      margin-bottom: 50px;
+    }
   }
  nav {
-   width: 100vw;
+   background: url("../../../assets/img/keg.png") 75% 100% no-repeat, url("../../../assets/img/blue.jpg") 100% 100% no-repeat;
+   background-size: contain, cover;
    .items {
-     height: 100px;
+     height: 500px;
      display: flex;
      flex-direction: row;
-     justify-content: center;
+     justify-content: flex-start;
+
      .item {
        cursor: pointer;
        margin: 5px;
      }
    }
  }
+  nav:hover {
+    background: url("../../../assets/img/keg.png") 85% 100% no-repeat, url("../../../assets/img/blue.jpg") 100% 100% no-repeat;
+    background-size: contain, cover;
+  }
   .content {
     text-align: center;
-    height: 1000px;
-    background-color: seagreen;
-    div {
-
+    background-color: rebeccapurple;
+  }
+  footer {
+    margin-top: 100px;
+    .footer {
+      color: white;
+      background-color: black;
+      height: 50px;
+      display: flex;
+      justify-content: center;
     }
   }
 }

@@ -1,7 +1,43 @@
 //MainPage
 .MainPage {
-  p {
-    margin-top: 100px;
+  #section-0 {
+    padding-top: 400px;
+    background-color: rebeccapurple;
+  }
+  #section-1 {
+    background-color: sandybrown;
+    .items {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  #section-2 {
+    background-color: rebeccapurple;
+    .items {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  #section-3 {
+    background-color: skyblue;
+  }
+  #section-4 {
+    background-color: rebeccapurple;
   }
 
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+    .img1 {
+      height: 200px;
+    }
+    .img2 {
+      height: 150px;
+    }
+
+  }
 }

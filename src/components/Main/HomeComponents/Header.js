@@ -26,13 +26,15 @@ class Header extends Component {
     }
     componentDidMount() {
         $(window).scroll(function() {
-            if ($(this).scrollTop() >= 50) {
-                $('#head').css({transition: "1s", position: "fixed", left: "0", right: "0", background: "#2B2D49"});
-                $('#navigation').css({height: "50px",justifyContent: "flex-start"});
+            if ($(this).scrollTop() >= 100) {
+                $('#info').hide();
+                $('#head').css({transition: "1s", position: "fixed", left: "0", right: "0", background: "#2B2D49",justifyContent: "center",clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 95%)"});
+                $('#navigation').css({height: "50px",justifyContent: "center"});
             }
             else {
-                $('#head').css({position: "relative", background: ""});
-                $('#navigation').css({height: "100px",justifyContent: "center"});
+                $('#info').show();
+                $('#head').css({position: "relative", background: "",justifyContent: "space-around"});
+                $('#navigation').css({height: "500px",justifyContent: "space-around"});
             }
         });
     }
@@ -57,15 +59,30 @@ class Header extends Component {
     render() {
         return (
             <div className="Header">
-                <nav id="head">
-                    <div id="navigation" className="items">
-                        <div className="item" onClick={this.HomePage}>HomePage</div>
-                        <div className="item" onClick={this.Page50}>Page50</div>
-                        <div className="item" onClick={this.Page30}>Page30</div>
-                        <div className="item" onClick={this.Page20}>Page20</div>
-                        <div className="item" onClick={this.PageInfo}>PageInfo</div>
-                        <div className="item" onClick={this.PagePrice}>PagePrice</div>
+                <div id="info">
+                    <div className="info1">
+                        info1
                     </div>
+                    <div className="info1">
+                        info1
+                    </div>
+                    <div className="info1">
+                        info1
+                    </div>
+                </div>
+                <nav id="head">
+                    <div id="navigation">
+                        <div className="items" >
+                            <div className="item" onClick={this.HomePage}>HomePage</div>
+                            <div className="item" onClick={this.Page50}>Page50</div>
+                            <div className="item" onClick={this.Page30}>Page30</div>
+                            <div className="item" onClick={this.Page20}>Page20</div>
+                            <div className="item" onClick={this.PageInfo}>PageInfo</div>
+                            <div className="item" onClick={this.PagePrice}>PagePrice</div>
+                        </div>
+                        <div className="search">search</div>
+                    </div>
+                    <div><button>BUTTON</button></div>
                 </nav>
                 <div className="content">
                     {
@@ -93,6 +110,11 @@ class Header extends Component {
                         <PagePrice/>
                     }
                 </div>
+                <footer>
+                    <div className="footer">
+                        footer
+                    </div>
+                </footer>
             </div>
         );
     }
