@@ -1,7 +1,14 @@
 //Header
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 .Header {
-  background-color: rebeccapurple;
+  background-color: whitesmoke;
   #info {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Fredericka the Great', Merriweather;
+    font-size: 18px;
     z-index: 11;
     position: absolute;
     top: 20%;
@@ -20,37 +27,93 @@
       justify-content: space-around;
     }
     button {
-      margin-bottom: 50px;
+      border: none;
+      outline: none;
+      color: white;
+      cursor: pointer;
+      background: transparent;
+      margin: 10px 0;
+    }
+    button:hover {
+      color: darkred;
     }
   }
  nav {
-   background: url("../../../assets/img/keg.png") 75% 100% no-repeat, url("../../../assets/img/blue.jpg") 100% 100% no-repeat;
+   transition: .5s;
+   color: white;
+   text-transform: uppercase;
+   text-shadow: 4px 4px 15px rgba(150, 150, 150, 1);
+   font-size: 26px;
+   font-family: 'Abril Fatface', 'Merriweather';
+   font-weight: 700;
+   background: url("../../../assets/img/keg.png") 75% 100% no-repeat, url("../../../assets/img/fire.jpg") 100% 100% no-repeat;
    background-size: contain, cover;
    .items {
      height: 500px;
      display: flex;
      flex-direction: row;
      justify-content: flex-start;
-
+     align-items: flex-start;
      .item {
+       transition: 1s;
        cursor: pointer;
-       margin: 5px;
+       margin: 25px 10px;
+       a {
+         transition: 1s;
+         color: white;
+       }
+       a:hover {
+         transition: 1s;
+         color: darkred;
+       }
+       a:visited {
+         color: white;
+       }
      }
+     .item:hover {
+       color: darkred;
+       .hover {
+         transition: 1s;
+         visibility: visible;
+         clip-path: polygon(0 0, 100% 0, 100% 70%, 65% 70%, 50% 100%, 35% 70%, 0 70%);
+         margin-bottom: 5px;
+         height: 15px;
+         width: 100%;
+         background-color: darkred;
+       }
+     }
+     .hover {
+       transition: 1s;
+       visibility: hidden;
+     }
+   }
+   .search {
+     transition: 1s;
+     cursor: pointer;
+     margin: 25px 10px;
    }
  }
   nav:hover {
-    background: url("../../../assets/img/keg.png") 85% 100% no-repeat, url("../../../assets/img/blue.jpg") 100% 100% no-repeat;
+    background: url("../../../assets/img/keg.png") 85% 100% no-repeat, url("../../../assets/img/fire.jpg") 100% 100% no-repeat;
     background-size: contain, cover;
   }
   .content {
     text-align: center;
-    background-color: rebeccapurple;
+    background-color: transparent;
+    #myVideo {
+      position: fixed;
+      opacity: .2;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
   }
   footer {
     margin-top: 100px;
     .footer {
       color: white;
-      background-color: black;
+      background-color: #1a154c;
       height: 50px;
       display: flex;
       justify-content: center;

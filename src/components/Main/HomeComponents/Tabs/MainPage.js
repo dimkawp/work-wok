@@ -34,6 +34,8 @@ class MainPage extends Component {
                 <section id="section-3">
                     <h2>Как с нами связаться ?</h2>
                     <div className="formInfo">картинка + инфа</div>
+                </section>
+                <section id="section-4">
                     <div className="formBlock">
                         <span>Форма !</span>
                     </div>

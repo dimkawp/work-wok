@@ -6,7 +6,7 @@ class Page30 extends Component {
         return (
             <div className="Page30">
                 <section id="section-0">
-                    Page30
+                    <h2>Page30</h2>
                 </section>
                 <section id="section-1">
                     <h2>Покупаем кеги 30</h2>

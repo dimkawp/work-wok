@@ -1,28 +1,31 @@
 //MainPage
 .MainPage {
   #section-0 {
-    padding-top: 400px;
-    background-color: rebeccapurple;
+    padding-top: 300px;
+    background-color: transparent;
   }
   #section-1 {
-    background-color: sandybrown;
+    color: whitesmoke;
+    background-color: #1a154c;
     .items {
       display: flex;
       flex-direction: row;
     }
   }
   #section-2 {
-    background-color: rebeccapurple;
+    background-color: transparent;
     .items {
       display: flex;
       flex-direction: row;
     }
   }
   #section-3 {
-    background-color: skyblue;
+    color: whitesmoke;
+    background-color: #1a154c;
   }
   #section-4 {
-    background-color: rebeccapurple;
+    color: #1a154c;
+    background-color: transparent;
   }
 
   section {
@@ -32,6 +35,8 @@
     align-items: center;
     min-height: 95vh;
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+    text-transform: uppercase;
+    font-family: 'Abril Fatface', cursive;
     .img1 {
       height: 200px;
     }
