@@ -8,13 +8,21 @@
     text-transform: uppercase;
     color: white;
     font-family: 'Fredericka the Great', Merriweather;
-    font-size: 18px;
+    font-size: 16px;
     z-index: 11;
     position: absolute;
     top: 20%;
     left: 20%;
     display: flex;
     flex-direction: column;
+    .info-4 {
+      font-size: 26px;
+    }
+    div {
+      span {
+        margin: 25px 0;
+      }
+    }
   }
   #head {
     z-index: 10;
@@ -33,6 +41,15 @@
       cursor: pointer;
       background: transparent;
       margin: 10px 0;
+      a {
+        color: white;
+      }
+      a:hover {
+        color: darkred;
+      }
+      a:visited {
+        color: white;
+      }
     }
     button:hover {
       color: darkred;

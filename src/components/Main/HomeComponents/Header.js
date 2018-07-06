@@ -13,6 +13,8 @@ import PageInfo from "./Tabs/PageInfo";
 import PagePrice from "./Tabs/PagePrice";
 //Icons
 import ArrowDown from 'react-icons/lib/go/arrow-down';
+//Img
+import Logo from '../../../assets/img/logo.png';
 //Anchor
 import ScrollableAnchor from 'react-scrollable-anchor';
 //Scroll
@@ -70,20 +72,23 @@ class Header extends Component {
             <div className="Header">
                 <div id="info">
                     <div className="info-1">
-                        ЛОГО
+                        <img src={Logo} alt=""/>
                     </div>
                     <div className="info-2">
-                        Покупаем аивные кеги дорого
+                        <p>- Покупаем пивные кеги <br/> <strong>дорого</strong>  </p>
                     </div>
                     <div className="info-3">
-                        Звони и називай свою цену
+                        <p>- Звони и називай свою цену</p>
+
                     </div>
                     <div className="info-4">
+                        <br/>
                         <p>+38 <span>(067)</span>-931-17-45</p>
                         <span>elefantenko@gmail.com</span>
                     </div>
                     <div className="info-5">
-                        Работаем по всей украине
+                        <br/>
+                        <p>Работаем по всей украине</p>
                     </div>
                 </div>
                 <nav id="head">
@@ -95,26 +100,26 @@ class Header extends Component {
                             </div>
                             <div className="item" onClick={this.Page50}>
                                 <div className="hover"></div>
-                                <a onClick={() => scroll.scrollTo(100)}>Кеги 50 л.</a>
+                                <a onClick={() => scroll.scrollTo(100)}>Кеги 50 л</a>
                             </div>
                             <div className="item" onClick={this.Page30}>
                                 <div className="hover"></div>
-                                <a onClick={() => scroll.scrollTo(100)}>Page30</a>
+                                <a onClick={() => scroll.scrollTo(100)}>Кеги 30 л</a>
                             </div>
                             <div className="item" onClick={this.Page20}>
                                 <div className="hover"></div>
-                                <a onClick={() => scroll.scrollTo(100)}>Page20</a>
+                                <a onClick={() => scroll.scrollTo(100)}>Кеги 20 л</a>
                             </div>
                             <div className="item" onClick={this.PageInfo}>
                                 <div className="hover"></div>
-                                <a onClick={() => scroll.scrollTo(100)}>PageInfo</a>
+                                <a onClick={() => scroll.scrollTo(100)}>Фитинги</a>
                             </div>
                             <div className="item" onClick={this.PagePrice}>
                                 <div className="hover"></div>
-                                <a onClick={() => scroll.scrollTo(100)}>PagePrice</a>
+                                <a onClick={() => scroll.scrollTo(100)}>Цены</a>
                             </div>
                         </div>
-                        <div className="search">search</div>
+                        <div className="search">Поиск</div>
                     </div>
                     <div><button><a onClick={() => scroll.scrollMore(150)}><ArrowDown size={50}/></a></button></div>
                 </nav>

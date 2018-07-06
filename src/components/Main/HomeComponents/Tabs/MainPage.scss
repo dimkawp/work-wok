@@ -1,31 +1,144 @@
 //MainPage
 .MainPage {
   #section-0 {
+    color: #1a154c;
     padding-top: 300px;
     background-color: transparent;
+    .items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      .item {
+        margin: 5px;
+        font-size: 18px;
+      }
+    }
+    .block-ul {
+      ul {
+        li {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
   }
   #section-1 {
     color: whitesmoke;
-    background-color: #1a154c;
-    .items {
+    background: linear-gradient(-45deg, #1a154c, #3b354c, #1a154c, #3b354c);
+    animation: Gradient 15s ease infinite;
+    background-size: 400% 400%;
+    .ui.container {
       display: flex;
-      flex-direction: row;
+      justify-content: center;
+
+    }
+    ul {
+      text-align: left;
+      li {
+        display: flex;
+        align-items: center;
+        svg {
+          margin-right: 15px;
+        }
+      }
     }
   }
   #section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1a154c;
     background-color: transparent;
     .items {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .item {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          width: 90%;
+        }
+        svg {
+          height: 50px;
+        }
+      }
     }
   }
   #section-3 {
+    div {
+      margin: 20px 0;
+      svg {
+        margin-right: 15px;
+      }
+    }
     color: whitesmoke;
-    background-color: #1a154c;
+    background: linear-gradient(-45deg, #1a154c, #3b354c, #1a154c, #3b354c);
+    animation: Gradient 15s ease infinite;
+    background-size: 400% 400%;
+  }
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
   }
   #section-4 {
     color: #1a154c;
     background-color: transparent;
+    .formBlock {
+      .ui.container {
+        .fields {
+          .ui.input {
+            width: 50%;
+            input {
+              margin: 20px 0;
+              outline: none;
+              border: none;
+              border-radius: 0;
+              border-bottom: 1px solid darkred;
+              background-color: transparent;
+              color: #1a154c;
+              font-family: 'Fredericka the Great', Merriweather;
+            }
+            ::placeholder {
+              color: #1a154c;
+              font-family: 'Fredericka the Great', Merriweather;
+            }
+          }
+        }
+        .field {
+          textarea {
+            width: 50%;
+            margin: 20px 0;
+            outline: none;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid darkred;
+            background-color: transparent;
+            color: #1a154c;
+            font-family: 'Fredericka the Great', Merriweather;
+          }
+          ::placeholder {
+            color: #1a154c;
+            font-family: 'Fredericka the Great', Merriweather;
+          }
+        }
+      }
+    }
   }
 
   section {
@@ -36,12 +149,27 @@
     min-height: 95vh;
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
     text-transform: uppercase;
-    font-family: 'Abril Fatface', cursive;
-    .img1 {
-      height: 200px;
+    font-family: 'Fredericka the Great', Merriweather;
+    ul {
+      padding: 0;
+      list-style-type: none;
+      li {
+        margin: 25px 0;
+      }
+      a {
+        cursor: pointer;
+        font-size: 26px;
+        color: #1a154c;
+      }
+      a:visited {
+        color: #1a154c;
+      }
+      a:hover {
+        color: darkred;
+      }
     }
-    .img2 {
-      height: 150px;
+    h2 {
+      font-size: 30px;
     }
 
   }

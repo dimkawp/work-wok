@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Page50.css';
+import { Table } from 'reactstrap';
+import { Container } from 'semantic-ui-react';
 
 class Page50 extends Component {
     render() {
@@ -12,8 +14,8 @@ class Page50 extends Component {
                     <h2>Покупаем кеги 50 литров</h2>
                     <p> КЕГом называется специальная емкость, служащая для транспортировки и продажи пива в розлив (также употребляется для розлива вина, кваса и прочих алкогольных и безалкогольных напитков).</p>
                     <h3>Технические характеристики КЕГ 50 литров стандарта&nbsp;<span>DIN</span></h3>
-                    <div>
-                        <table className="table" align="center">
+                    <Container>
+                        <Table striped hover className="table">
                             <tbody>
                             <tr>
                                 <td>Объём, в литрах</td>
@@ -40,11 +42,11 @@ class Page50 extends Component {
                                 <td>9,2</td>
                             </tr>
                             </tbody>
-                        </table>
-                    </div>
+                        </Table>
+                    </Container>
                     <h3>Технические характеристики КЕГ 50 литров стандарта&nbsp;<span>EURO</span></h3>
-                    <div>
-                        <table className="table" align="center">
+                    <Container>
+                        <Table striped hover className="table">
                             <tbody>
                             <tr>
                                 <td>Объём, в литрах</td>
@@ -71,8 +73,8 @@ class Page50 extends Component {
                                 <td>9,2</td>
                             </tr>
                             </tbody>
-                        </table>
-                    </div>
+                        </Table>
+                    </Container>
 
                 </section>
 

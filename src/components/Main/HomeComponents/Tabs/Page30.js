@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Page30.css';
+import { Table } from 'reactstrap';
+import { Container } from 'semantic-ui-react';
 
 class Page30 extends Component {
     render() {
@@ -14,8 +16,8 @@ class Page30 extends Component {
                         становится популярным и востребованным. Благодаря меньшему размеру и весу требует меньших
                         усилий при погрузке, транспортировке и установке. Мы покупаем 30 литровые пивные кеги в
                         любом количестве на выгодных для Вас условиях.</p>
-                    <div>
-                        <table className="table" align="center">
+                    <Container>
+                        <Table striped center hover className="table">
                             <tbody>
                             <tr>
                                 <td>Объём, в литрах</td>
@@ -42,11 +44,11 @@ class Page30 extends Component {
                                 <td>9,2</td>
                             </tr>
                             </tbody>
-                        </table>
-                    </div>
+                        </Table>
+                    </Container>
                     <h3>Технические характеристики КЕГ 30 литров стандарта <span>Euro</span></h3>
-                    <div>
-                        <table className="table" align="center">
+                    <Container>
+                        <Table striped center hover className="table">
                             <tbody>
                             <tr>
                                 <td>Объём, в литрах</td>
@@ -73,8 +75,8 @@ class Page30 extends Component {
                                 <td>9,2</td>
                             </tr>
                             </tbody>
-                        </table>
-                    </div>
+                        </Table>
+                    </Container>
                 </section>
 
             </div>

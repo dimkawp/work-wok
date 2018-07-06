@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Page20.css';
+import { Table } from 'reactstrap';
+import { Container } from 'semantic-ui-react';
 
 class Page20 extends Component {
     render() {
@@ -10,8 +12,8 @@ class Page20 extends Component {
                     <p><strong>Кеги</strong> — металлическая емкость (нержавеющая сталь), которая
                         предназначена для транспортировки и хранения пива и других алкогольных и безалкогольных напитков.</p>
                     <h3>Технические характеристики КЕГ 20 литров стандарта&nbsp;<span>DIN</span></h3>
-                    <div>
-                        <table className="table" align="center">
+                    <Container>
+                        <Table striped center hover className="table">
                             <tbody>
                             <tr>
                                 <td>Объём, в литрах</td>
@@ -30,11 +32,11 @@ class Page20 extends Component {
                                 <td>8,2&nbsp;</td>
                             </tr>
                             </tbody>
-                        </table>
-                    </div>
+                        </Table>
+                    </Container>
                     <h3>Технические характеристики КЕГ 20 литров стандарта EURO</h3>
-                    <div>
-                        <table className="table" align="center">
+                    <Container>
+                        <Table striped center hover className="table">
                             <tbody>
                             <tr>
                                 <td>Объём, в литрах</td>
@@ -53,8 +55,8 @@ class Page20 extends Component {
                                 <td>8,2</td>
                             </tr>
                             </tbody>
-                        </table>
-                    </div>
+                        </Table>
+                    </Container>
                 </section>
 
 
