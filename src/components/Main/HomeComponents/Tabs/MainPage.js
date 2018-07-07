@@ -111,9 +111,9 @@ class MainPage extends Component {
                     </div>
                 </section>
                 <section id="section-4" name="section4">
+
                     <Message size={50}/>
                     <div className="formBlock">
-                        <Container>
                             <Form.Group>
                                 <label>Name</label>
                                 <Form.Field control={Input} placeholder='Name' />
@@ -133,8 +133,6 @@ class MainPage extends Component {
                             <div className="subBlock">
                                 <Button type='submit'>Submit</Button>
                             </div>
-                        </Container>
-
                     </div>
                 </section>
             </div>

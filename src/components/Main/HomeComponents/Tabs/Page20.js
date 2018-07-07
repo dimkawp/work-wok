@@ -7,13 +7,16 @@ class Page20 extends Component {
     render() {
         return (
             <div className="Page20">
-                <section id="section-0"><h2>Покупаем кеги 20 литров</h2></section>
+                <section id="section-0">
+                    <h2>Покупаем кеги 20 литров</h2>
+                </section>
                 <section id="section-1">
-                    <p><strong>Кеги</strong> — металлическая емкость (нержавеющая сталь), которая
-                        предназначена для транспортировки и хранения пива и других алкогольных и безалкогольных напитков.</p>
-                    <h3>Технические характеристики КЕГ 20 литров стандарта&nbsp;<span>DIN</span></h3>
+
                     <Container>
-                        <Table striped center hover className="table">
+                        <p><strong>Кеги</strong> — металлическая емкость (нержавеющая сталь), которая
+                            предназначена для транспортировки и хранения пива и других алкогольных и безалкогольных напитков.</p>
+                        <h3>Технические характеристики КЕГ 20 литров стандарта&nbsp;<span>DIN</span></h3>
+                        <Table striped hover className="table">
                             <tbody>
                             <tr>
                                 <td>Объём, в литрах</td>
@@ -36,7 +39,7 @@ class Page20 extends Component {
                     </Container>
                     <h3>Технические характеристики КЕГ 20 литров стандарта EURO</h3>
                     <Container>
-                        <Table striped center hover className="table">
+                        <Table striped hover className="table">
                             <tbody>
                             <tr>
                                 <td>Объём, в литрах</td>

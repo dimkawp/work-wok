@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Header.css';
 //Semantic ui
-import { Tab } from 'semantic-ui-react';
+import { Tab, Container } from 'semantic-ui-react';
 //JQ
 import $ from 'jquery';
 //Components
@@ -13,6 +13,11 @@ import PageInfo from "./Tabs/PageInfo";
 import PagePrice from "./Tabs/PagePrice";
 //Icons
 import ArrowDown from 'react-icons/lib/go/arrow-down';
+import FaceBook from 'react-icons/lib/fa/facebook-official';
+import Twitter from 'react-icons/lib/fa/twitter';
+import Google from 'react-icons/lib/fa/google-plus-square';
+import Menu from 'react-icons/lib/md/menu';
+
 //Img
 import Logo from '../../../assets/img/logo.png';
 //Anchor
@@ -36,6 +41,13 @@ class Header extends Component {
         }
     }
     componentDidMount() {
+        scroll.scrollTo(10);
+        $(document).ready(function() {
+            $('.menuBlock').hide();
+        });
+        $(".menuIcon").click(function(){
+            $(".menuBlock").toggle("slow");
+        });
         $(window).scroll(function() {
             if ($(this).scrollTop() >= 100) {
                 $('#info').hide();
@@ -70,6 +82,37 @@ class Header extends Component {
     render() {
         return (
             <div className="Header">
+                <div className="itemsM">
+                    <Menu className="menuIcon" size={50}/>
+                </div>
+                <div className="menuBlock">
+                    <div className="items">
+                        <div className="item" onClick={this.HomePage}>
+                            <div className="hover"></div>
+                            <a onClick={() => scroll.scrollTo(100)}>Главная</a>
+                        </div>
+                        <div className="item" onClick={this.Page50}>
+                            <div className="hover"></div>
+                            <a onClick={() => scroll.scrollTo(100)}>Кеги 50 л</a>
+                        </div>
+                        <div className="item" onClick={this.Page30}>
+                            <div className="hover"></div>
+                            <a onClick={() => scroll.scrollTo(100)}>Кеги 30 л</a>
+                        </div>
+                        <div className="item" onClick={this.Page20}>
+                            <div className="hover"></div>
+                            <a onClick={() => scroll.scrollTo(100)}>Кеги 20 л</a>
+                        </div>
+                        <div className="item" onClick={this.PageInfo}>
+                            <div className="hover"></div>
+                            <a onClick={() => scroll.scrollTo(100)}>Фитинги</a>
+                        </div>
+                        <div className="item" onClick={this.PagePrice}>
+                            <div className="hover"></div>
+                            <a onClick={() => scroll.scrollTo(100)}>Цены</a>
+                        </div>
+                    </div>
+                </div>
                 <div id="info">
                     <div className="info-1">
                         <img src={Logo} alt=""/>
@@ -156,7 +199,22 @@ class Header extends Component {
                 </div>
                 <footer>
                     <div className="footer">
-                        footer
+                        <Container>
+                            <div className="items">
+                                <div className="socialBlock">
+                                    <FaceBook size={40}/>
+                                    <Twitter size={40}/>
+                                    <Google size={40}/>
+                                </div>
+                                <div className="mediaBlock">
+                                    <p>+38 <span>(067)</span>-931-17-45</p>
+                                    <span>elefantenko@gmail.com</span>
+                                </div>
+                                <div className="mapBlock">
+                                    googleMap
+                                </div>
+                            </div>
+                        </Container>
                     </div>
                 </footer>
             </div>

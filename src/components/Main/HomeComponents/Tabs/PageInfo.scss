@@ -1,5 +1,8 @@
 //PageInfo
 .PageInfo {
+  font-family: 'Fredericka the Great', Merriweather;
+  font-size: 20px;
+  color: #1a154c;
   #section-0 {
     padding-top: 300px;
     min-height: 100px;
@@ -9,6 +12,9 @@
   }
   #section-1 {
     min-height: 95vh;
+    .ui.container {
+      margin: 50px 0;
+    }
   }
   section {
     display: flex;
@@ -16,6 +22,16 @@
     justify-content: center;
     align-items: center;
     min-height: 500px;
-    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+
+  }
+}
+@media screen and (max-width: 600px) {
+  .PageInfo {
+    #section-1 {
+      min-height: 95vh;
+      .ui.container {
+        margin: 70px 0;
+      }
+    }
   }
 }
