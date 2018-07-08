@@ -45,7 +45,10 @@ class Header extends Component {
         $(document).ready(function() {
             $('.menuBlock').hide();
         });
-        $(".menuIcon").click(function(){
+        $(".item a").click(function () {
+            $('.menuBlock').hide(1000);
+        });
+        $(".menuIcon").click(function() {
             $(".menuBlock").toggle("slow");
         });
         $(window).scroll(function() {

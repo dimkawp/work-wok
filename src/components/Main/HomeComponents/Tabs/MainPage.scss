@@ -74,6 +74,13 @@
     }
   }
   #section-3 {
+    .formInfo {
+      .socialBlock {
+        svg {
+          margin: 0;
+        }
+      }
+    }
     div {
       margin: 20px 0;
       svg {
@@ -85,6 +92,7 @@
     animation: Gradient 15s ease infinite;
     background-size: 400% 400%;
   }
+
   @keyframes Gradient {
     0% {
       background-position: 0% 50%
@@ -136,6 +144,12 @@
         ::placeholder {
           color: #1a154c;
           font-family: 'Fredericka the Great', Merriweather;
+        }
+      }
+      .subBlock {
+        button {
+          color: white;
+          background-color: #1a154c;
         }
       }
     }

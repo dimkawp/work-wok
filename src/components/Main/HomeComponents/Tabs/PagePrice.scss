@@ -14,6 +14,55 @@
     min-height: 95vh;
     display: flex;
     justify-content: flex-start;
+    .formBlock {
+      padding: 50px 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .fields {
+        .ui.input {
+          width: 50%;
+          input {
+            margin: 20px 0;
+            outline: none;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid darkred;
+            background-color: transparent;
+            color: #1a154c;
+            font-family: 'Fredericka the Great', Merriweather;
+          }
+          ::placeholder {
+            color: #1a154c;
+            font-family: 'Fredericka the Great', Merriweather;
+          }
+        }
+      }
+      .field {
+        textarea {
+          width: 50%;
+          margin: 20px 0;
+          outline: none;
+          border: none;
+          border-radius: 0;
+          border-bottom: 1px solid darkred;
+          background-color: transparent;
+          color: #1a154c;
+          font-family: 'Fredericka the Great', Merriweather;
+        }
+        ::placeholder {
+          color: #1a154c;
+          font-family: 'Fredericka the Great', Merriweather;
+        }
+      }
+      .subBlock {
+        button {
+          color: white;
+          background-color: #1a154c;
+        }
+      }
+    }
     .ui.container {
       margin: 50px 0;
       .ulBlock {
@@ -33,5 +82,25 @@
     align-items: center;
     min-height: 500px;
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .PagePrice {
+    #section-1 {
+      .formBlock {
+        width: 100%;
+        .fields {
+          .ui.input {
+            width: 90%;
+          }
+        }
+        .field {
+          textarea {
+            width: 90%;
+          }
+        }
+      }
+    }
   }
 }
