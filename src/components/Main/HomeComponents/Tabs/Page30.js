@@ -77,7 +77,6 @@ class Page30 extends Component {
                         </Table>
                     </Container>
                 </section>
-
             </div>
         );
     }

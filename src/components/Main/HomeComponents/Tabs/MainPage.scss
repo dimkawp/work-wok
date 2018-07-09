@@ -92,7 +92,6 @@
     animation: Gradient 15s ease infinite;
     background-size: 400% 400%;
   }
-
   @keyframes Gradient {
     0% {
       background-position: 0% 50%
@@ -154,7 +153,6 @@
       }
     }
   }
-
   section {
     display: flex;
     flex-direction: column;
@@ -187,7 +185,6 @@
     }
   }
 }
-
 @media screen and (max-width: 600px) {
   .MainPage {
     #section-2 {
@@ -233,8 +230,6 @@
       a {
         font-size: 16px;
       }
-
     }
   }
-
 }

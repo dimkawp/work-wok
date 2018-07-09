@@ -11,7 +11,6 @@ class Page20 extends Component {
                     <h2>Покупаем кеги 20 литров</h2>
                 </section>
                 <section id="section-1">
-
                     <Container>
                         <p><strong>Кеги</strong> — металлическая емкость (нержавеющая сталь), которая
                             предназначена для транспортировки и хранения пива и других алкогольных и безалкогольных напитков.</p>
@@ -61,8 +60,6 @@ class Page20 extends Component {
                         </Table>
                     </Container>
                 </section>
-
-
             </div>
         );
     }

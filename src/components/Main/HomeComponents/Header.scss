@@ -164,33 +164,6 @@
       min-height: 100%;
     }
   }
-  footer {
-    .footer {
-      padding: 50px 0;
-      font-family: 'Fredericka the Great', Merriweather;
-      font-size: 20px;
-      color: white;
-      background-color: #1a154c;
-      display: flex;
-      justify-content: center;
-      .items {
-        display: flex;
-        justify-content: space-between;
-        .socialBlock {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: row;
-          * {
-            margin: 5px;
-          }
-        }
-        .mediaBlock {
-          text-align: center;
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -212,12 +185,9 @@
         .items {
           display: none;
         }
-
       }
     }
-
   }
-
 }
 @media screen and (max-width: 600px) {
   .Header {

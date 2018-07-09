@@ -5,6 +5,7 @@ import { Tab, Container } from 'semantic-ui-react';
 //JQ
 import $ from 'jquery';
 //Components
+import Footer from "./Footer";
 import MainPage from "./Tabs/MainPage";
 import Page50 from "./Tabs/Page50";
 import Page30 from "./Tabs/Page30";
@@ -13,9 +14,6 @@ import PageInfo from "./Tabs/PageInfo";
 import PagePrice from "./Tabs/PagePrice";
 //Icons
 import ArrowDown from 'react-icons/lib/go/arrow-down';
-import FaceBook from 'react-icons/lib/fa/facebook-official';
-import Twitter from 'react-icons/lib/fa/twitter';
-import Google from 'react-icons/lib/fa/google-plus-square';
 import Menu from 'react-icons/lib/md/menu';
 
 //Img
@@ -200,26 +198,7 @@ class Header extends Component {
                         <PagePrice/>
                     }
                 </div>
-                <footer>
-                    <div className="footer">
-                        <Container>
-                            <div className="items">
-                                <div className="socialBlock">
-                                    <FaceBook size={40}/>
-                                    <Twitter size={40}/>
-                                    <Google size={40}/>
-                                </div>
-                                <div className="mediaBlock">
-                                    <p>+38 <span>(067)</span>-931-17-45</p>
-                                    <span>elefantenko@gmail.com</span>
-                                </div>
-                                <div className="mapBlock">
-                                    googleMap
-                                </div>
-                            </div>
-                        </Container>
-                    </div>
-                </footer>
+                <Footer/>
             </div>
         );
     }

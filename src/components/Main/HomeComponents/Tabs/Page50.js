@@ -74,9 +74,7 @@ class Page50 extends Component {
                             </tbody>
                         </Table>
                     </Container>
-
                 </section>
-
             </div>
         );
     }
