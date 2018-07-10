@@ -127,7 +127,9 @@ class Header extends Component {
                     </div>
                     <div className="info-4">
                         <br/>
-                        <p>+38 <span>(067)</span>-931-17-45</p>
+                        <p>
+                        <a href="tel: +380679311745">+38 <span>(067)</span>-931-17-45</a>
+                        </p>
                         <span>elefantenko@gmail.com</span>
                     </div>
                     <div className="info-5">

@@ -17,9 +17,15 @@ class Footer extends Component {
                     <Container>
                         <div className="items">
                             <div className="socialBlock">
-                                <FaceBook size={40}/>
-                                <Twitter size={40}/>
-                                <Google size={40}/>
+                                <a href="https://www.facebook.com/alexander.lytvynenko" target="_blank">
+                                    <FaceBook size={40}/>
+                                </a>
+                                <a href="https://www.facebook.com/alexander.lytvynenko" target="_blank">
+                                    <Twitter size={40}/>
+                                </a>
+                                <a href="https://www.google.com/maps" target="_blank">
+                                    <Google size={40}/>
+                                </a>     
                             </div>
                             <div className="mediaBlock">
                                 <p>+38 <span>(067)</span>-931-17-45</p>

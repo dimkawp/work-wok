@@ -12,10 +12,21 @@ footer {
       display: flex;
       justify-content: space-between;
       .socialBlock {
+        z-index: 9;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
+        a {
+          cursor: pointer;
+          color: white;
+        }
+        a:hover {
+          color: darkgray;
+        }
+        a:visited {
+          color: white;
+        }
         * {
           margin: 5px;
         }

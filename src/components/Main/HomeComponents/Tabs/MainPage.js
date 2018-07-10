@@ -59,9 +59,10 @@ class MainPage extends Component {
         const data = {
             name: this.state.formName,
             mail: this.state.formMail,
+            price: this.state.formPrice,
             text: this.state.formText
         }
-        fetch(apiUrl+'/api/users/message', {
+        fetch(apiUrl+'/api/wok/message', {
             method: 'post',
             mode: 'cors',
             headers: {
@@ -75,7 +76,7 @@ class MainPage extends Component {
                 setTimeout(() => {
                     this.setState({responseForm: response.message});
                     this.setState({buttonLoading: false});
-                    this.setState({formName: '',formMail: '', formText: '', formSubmitBtnDisabled: true});
+                    this.setState({formName: '',formMail: '',formPrice: '', formText: '', formSubmitBtnDisabled: true});
                 },1500);
             })
     }
@@ -129,9 +130,9 @@ class MainPage extends Component {
                     <Container >
                         <div className="items">
                             <div className="item">
-                                <Phone2 size={50}/>
+                            <a href="tel: +380679311745"><Phone2 size={50}/></a>                    
                                 <p>
-                                    <span><strong>+38 (067)-931-17-45</strong></span>
+                                    <a href="tel: +380679311745"><span><strong>+38 (067)-931-17-45</strong></span></a>
                                     <br/>
                                     <br/>
                                     Если Вы решили продать ПИВНЫЕ КЕГИ - звоните <br/> мне и я куплю у Вас любое количество (от одной штуки) по высокой цене!
@@ -165,7 +166,9 @@ class MainPage extends Component {
                         <div><Phone2 size={20}/>+38 (067)-931-17-45</div>
                         <div><Message size={20}/>elefantenko@gmail.com</div>
                         <div className="socialBlock">
-                            <Facebook size={50}/>
+                            <a href="https://www.facebook.com/alexander.lytvynenko" target="_blank">
+                                <Facebook size={50}/>
+                            </a>        
                         </div>
                     </div>
                 </section>

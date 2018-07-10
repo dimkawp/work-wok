@@ -42,9 +42,10 @@ class PagePrice extends Component {
         const data = {
             name: this.state.formName,
             mail: this.state.formMail,
+            price: this.state.formPrice,
             text: this.state.formText
         }
-        fetch(apiUrl+'/api/users/message', {
+        fetch(apiUrl+'/api/wok/message', {
             method: 'post',
             mode: 'cors',
             headers: {
@@ -58,7 +59,7 @@ class PagePrice extends Component {
                 setTimeout(() => {
                     this.setState({responseForm: response.message});
                     this.setState({buttonLoading: false});
-                    this.setState({formName: '',formMail: '', formText: '', formSubmitBtnDisabled: true});
+                    this.setState({formName: '',formMail: '',formPrice: '', formText: '', formSubmitBtnDisabled: true});
                 },1500);
             })
     }
